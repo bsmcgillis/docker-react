@@ -1,3 +1,8 @@
+# SOME DOCKER NOTES
+* To specify a Dockerfile to run, use this build command: `docker build -f Dockerfile.dev .`
+* To run a container in interactive mode use the `-it` flag: `docker run -it -p 3000:3000 IMAGE_ID`
+* To map volumes from the local directory (but let the container use its own node_modules), run this command: `docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app fc18fe10d32b`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
